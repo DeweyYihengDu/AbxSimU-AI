@@ -1,0 +1,11 @@
+feature,abs_IG
+bond_in_ring,0.077745624
+stereo=none,0.04157845
+bond=single,0.0367982
+conjugated,0.026042012
+bond=double,0.009182981
+bond=triple,0.0
+bond=other,0.0
+bond=aromatic,0.0
+stereo=Z,0.0
+stereo=E,0.0
