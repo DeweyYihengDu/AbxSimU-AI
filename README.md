@@ -1,6 +1,4 @@
-# DL_on_antibiotics_microbiology
-
-<img src="assets/logo.png" alt="DL-AM Logo" width="200">
+# DL_on_antibiotics_microbiology <img src="./DL_logo.png" alt="DL-AM Logo" width="200">
 
 ## Source Data
 
