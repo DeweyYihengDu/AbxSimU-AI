@@ -2,3 +2,6 @@ ML models.ipynb
 New_data_set_model.ipynb
 best_gine_model.pth
 *.pth
+/ml_outputs
+/ml_lc_plots
+/ml_lc_outputs
