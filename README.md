@@ -1,5 +1,7 @@
 # DL_on_antibiotics_microbiology
 
+<img src="assets/logo.png" alt="DL-AM Logo" width="200">
+
 ## Source Data
 
 The dataset of current study comprises three distinct libraries of compounds, adopted from a former study \autocite{swanson_2024_generative}. 
