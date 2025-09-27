@@ -10,4 +10,5 @@ The dataset of current study comprises three distinct libraries of compounds, ad
 
 In our research, we compared two modeling strategies: (1) Combined libraries approach, where Libraries 1, 2, and 3 were merged prior to data splitting; and (2) a Library partitioning approach, in which Libraries 1 and 2 were used exclusively for training, and Library 3 was reserved for independent testing.
 
-## Data Splitting
+#
+
