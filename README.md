@@ -8,7 +8,16 @@ The dataset of current study comprises three distinct libraries of compounds, ad
  - **Library 2**, known as the Broad Drug Repurposing Hub, contains 6680 molecules, many of which are FDA-approved drugs or candidates currently undergoing clinical trials. 
  - **Library 3** is a synthetic small-molecule screening collection comprising 5376 molecules randomly sampled from a larger chemical library maintained at the Broad Institute. All three libraries were screened for their growth inhibitory activities against an opportunistic bacteria, namely - *Acinetobacter baumannii*, primarily associated with hospital-acquired infections and resistance. The activities were categorized as active (1) or inactive (0), constituting a binary classification problem.
 
-In our research, we compared two modeling strategies: (1) Combined libraries approach, where Libraries 1, 2, and 3 were merged prior to data splitting; and (2) a Library partitioning approach, in which Libraries 1 and 2 were used exclusively for training, and Library 3 was reserved for independent testing.
+In our research, we compared two modeling strategies: (1) Combined libraries approach, where Libraries 1, 2, and 3 were merged prior to data splitting; and (2) a Library partitioning approach, in which Libraries 1 and 2 were used exclusively for training, and Library 3 was reserved for independent testing. The example data is in the `data` file.
 
-#
+## Antibiotic Activity ML Benchmarks & GNN Pipeline
 
+This repository contains two complementary pipelines for molecular antibiotic-activity prediction:
+
+1. **Classical ML (fingerprints)**
+
+    + Morgan fingerprints (RDKit)
+    + Model zoo: Logistic Regression, SVM, Random Forest, Decision Tree, KNN, XGBoost
+    + Undersampling strategies: `kmeans` KMeans-based representative negative selection (train & test)
+
+2. **GNN with Graph Autoencoder (GAE) & GINE classifier**
