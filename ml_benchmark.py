@@ -522,37 +522,37 @@ def main():
         do_balanced_eval=False,
     )
 
-    # 4) Random undersampling + balanced test repeats (extra evaluation)
-    _, perf_balanced, _ = run_strategy(
-        data=df,
-        strategy_name="random_balanced",
-        neg_sampling_train="random",
-        neg_sampling_test="random",
-        out_dir=out_dir,
-        seed=args.seed,
-        n_splits_outer=args.splits,
-        inner_cv_splits=args.inner_cv,
-        neg_pos_ratio=args.neg_pos_ratio,
-        balanced_repeats=args.balanced_repeats,
-        do_balanced_eval=True,
-    )
+    # # 4) Random undersampling + balanced test repeats (extra evaluation)
+    # _, perf_balanced, _ = run_strategy(
+    #     data=df,
+    #     strategy_name="random_balanced",
+    #     neg_sampling_train="random",
+    #     neg_sampling_test="random",
+    #     out_dir=out_dir,
+    #     seed=args.seed,
+    #     n_splits_outer=args.splits,
+    #     inner_cv_splits=args.inner_cv,
+    #     neg_pos_ratio=args.neg_pos_ratio,
+    #     balanced_repeats=args.balanced_repeats,
+    #     do_balanced_eval=True,
+    # )
 
     # Combine all aggregated tables for convenience
-    combined = []
-    for name in ["kmeans", "none", "random", "random_balanced"]:
-        p = out_dir / f"agg_performance_{name}.csv"
-        if p.exists():
-            t = pd.read_csv(p, index_col=0)
-            t.reset_index(inplace=True)
-            t.rename(columns={"index": "Strategy_Model"}, inplace=True)
-            t.insert(0, "Strategy", name)
-            combined.append(t)
+    # combined = []
+    # for name in ["kmeans", "none", "random", "random_balanced"]:
+    #     p = out_dir / f"agg_performance_{name}.csv"
+    #     if p.exists():
+    #         t = pd.read_csv(p, index_col=0)
+    #         t.reset_index(inplace=True)
+    #         t.rename(columns={"index": "Strategy_Model"}, inplace=True)
+    #         t.insert(0, "Strategy", name)
+    #         combined.append(t)
 
-    if combined:
-        combined_df = pd.concat(combined, ignore_index=True)
-        combined_csv = out_dir / "combined_agg_performance.csv"
-        combined_df.to_csv(combined_csv, index=False)
-        logging.info(f"[combined] saved: {combined_csv}")
+    # if combined:
+    #     combined_df = pd.concat(combined, ignore_index=True)
+    #     combined_csv = out_dir / "combined_agg_performance.csv"
+    #     combined_df.to_csv(combined_csv, index=False)
+    #     logging.info(f"[combined] saved: {combined_csv}")
 
 
 if __name__ == "__main__":
