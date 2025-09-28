@@ -1,4 +1,9 @@
-# DL_on_antibiotics_microbiology <img src="./DL_logo.png" alt="DL-AM Logo" width="200">
+<h1 align="center">
+<h3>Deep Learning on Antibiotics Microbiology </h3>
+</h1>
+<p align="center">
+<img src="./DL_logo.png" alt="DL-AM Logo" width="200">
+</p>
 
 ## Source Data
 
