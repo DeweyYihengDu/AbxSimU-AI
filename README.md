@@ -1,5 +1,5 @@
 <h1 align="center">
-<h3>Deep Learning on Antibiotics Microbiology </h3>
+<h3>AbxSimU-AI: Similarity-Based Undersampling and AI Models for Antibiotic Activity Prediction </h3>
 </h1>
 <p align="center">
 <img src="./DL_logo.png" alt="DL-AM Logo" width="200">
