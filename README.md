@@ -130,3 +130,20 @@ python train_gcn_gae_pipeline.py \
   --explain-save-dir ./explain_out
 ```
 
+## Citation
+
+```
+@article{DU2026108778,
+  title = {Ligand-based prediction of anti-bacterial compounds: Overcoming class imbalance in molecular data},
+  journal = {Computational Biology and Chemistry},
+  volume = {120},
+  pages = {108778},
+  year = {2026},
+  issn = {1476-9271},
+  doi = {https://doi.org/10.1016/j.compbiolchem.2025.108778},
+  url = {https://www.sciencedirect.com/science/article/pii/S1476927125004402},
+  author = {Yiheng Du and Khandaker Asif Ahmed and Himadri Shekhar Mondal and Md Zakir Hossain}
+}
+```
+
+
