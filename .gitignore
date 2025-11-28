@@ -1,0 +1,12 @@
+ML models.ipynb
+New_data_set_model.ipynb
+best_gine_model.pth
+*.pth
+/ml_outputs
+/ml_lc_plots
+/ml_lc_outputs
+/ml_outputs2
+/ml_outputs21
+/ml_outputs_swap
+/overlap_outputs
+/reports_leakage
